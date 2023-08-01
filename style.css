@@ -25,6 +25,10 @@ header {
   display: flex;
 }
 
+.nav-toggle {
+  display:none;
+}
+
 
 .nav-lists{
   display: flex;
@@ -56,12 +60,17 @@ a{
   font-size: 64px;
 }
 
+p{
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
 .main-visual-text {
   padding-top: 10px;
   font-size: 20px;
 }
 
-/*portfolioデザイン*/
+/*mainデザイン*/
 .main:nth-child(odd) {
   background-color: #ECEFF1;
 
@@ -73,8 +82,20 @@ a{
   text-align: center;
 }
 
-.contents:nth-child(1){
+.portfolio {
   width: 920px;
+}
+
+.feature {
+  width: 980px;
+}
+
+.profile {
+  width: 1024px;
+}
+
+.contact {
+  width: 800px;
 }
 
 .title {
@@ -82,9 +103,20 @@ a{
   font-size: 32px;
 }
 
+.title:after{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 70px;
+  height: 3px;
+  background-color: #EC715F;
+}
+
 .text{
   padding: 30px 0;
-  font-size: 16px;
+
 }
 
 .image {
@@ -132,9 +164,8 @@ a{
   background-image: url(img/webcamp-mother.png);
 }
 
-/*featureデザイン*/
-.contents:nth-child(2){
-  width: 980px;
+i {
+  font-size: 60px;
 }
 
 .text-contents {
@@ -154,6 +185,10 @@ a{
 
 h3 {
   font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.text-box h3 {
   margin: 10px 0;
 }
 
@@ -162,19 +197,52 @@ h3 {
   font-size: 16px;
 }
 
-/*profileデザイン*/
-.contents:nth-child(3){
-  width: 1024px;
+.myprofile {
+  display: flex;
 }
 
-/*contactデザイン*/
-.contents:nth-child(4){
-  width: 800px;
+.icon, .profile-item {
+  width: 512px;
 }
 
+.profile-item {
+  text-align: left;
+}
 
+.myicon {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
 
+.name {
+ margin-bottom: 20px;
+}
 
+.contact-item {
+  display: flex;
+}
+
+.item, .sns {
+  width: 400px;
+
+}
+
+.mail, .tel, .sns-icon, .sns h3 {
+  margin: 0 auto;
+  width: 200px;
+  text-align: left;
+}
+
+.sns-icon {
+  display: flex;
+
+}
+
+.sns-icon i {
+  margin-right: 20px;
+  font-size: 50px;
+}
 
 
 /*footerデザイン*/
@@ -184,4 +252,38 @@ h3 {
   color: #FAFAFA;
   height: 60px;
   background-color: #EC715F;
+}
+
+/*レスポンス対応*/
+@media screen and (max-width: 767px){
+  .header-menu{
+    width: 90px;
+    height: 50px;
+  }
+
+
+  .btn-burger {
+    display: block;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+  }
+  
+  .burger-icon, .burger-icon:before, .burger-icon:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 3px;
+    background-color: #EC715F;
+    border-radius: 2px;
+    display: block;
+    content: '';
+    margin: auto;
+  }
+  
+  
+
 }
