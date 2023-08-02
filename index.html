@@ -11,35 +11,34 @@
 
     <header>
       <div class="header-menu">
-        <a class="header-logo" href="#"><img src="img/logo.png"></a>
-        
-        <div class="drawer">
-          <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle"/>
-          <label for="navToggle" class="btn-burger">
-            <span class="burger-icon"></span>
+        <a href="#top">
+          <img class="logo" src="img/logo.png">
+        </a>
+
+        <div class="nav">
+          <input type="checkbox" id="drawer_input" class="drawer_hidden"/>
+          <label for="drawer_input" class="drawer_open">
+            <span></span>
           </label>
-        <nav class="nav-contents">
-          <ul class="nav-lists">
-            <a href="#"><li class="nav-item">Portfolio</li></a>
-            <a href="#"><li class="nav-item">Feature</li></a>
-            <a href="#"><li class="nav-item">Profile</li></a>
-            <a href="#"><li class="nav-item">Contact</li></a>
-          </ul>
-        </nav>
-        
-        </div>
-        
+          <nav class="nav-contents">
+            <ul class="nav-lists">
+              <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+              <li class="nav-item"><a href="#feature">Feature</a></li>
+              <li class="nav-item"><a href="#profile">Profile</a></li>
+              <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+         </div>
       </div>
     </header>
 
-    <div class="main-visual">
+    <div id="top" class="main-visual">
       <h1 class="main-visual-name">Lorem Ipsum</h1>
       <p class="main-visual-text">simply dummy text of the printing</p>
     </div>
 
     <main>
-      <div class="main">
-        <div class="contents portfolio">
+        <div id="portfolio" class="contents">
           <h2 class="title">Portfolio</h2>
           <p class="text">
             It is a long established fact that a reader will be distracted by the readable<br>
@@ -55,14 +54,12 @@
             <div class="image-box"></div>
           </div>
         </div>
-      </div>
 
-      <div class="main">
-        <div class="contents feature">
+        <div id="feature" class="contents">
           <h2 class="title">Feature</h2>
           <p class="text">
             It is a long established fact that a reader will be distracted by the readable<br>
-            content of page when looking at its layout.<br>
+            content of page when looking at its layout.<br class="sp-none">
             The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
           </p>
           <div class="text-contents">
@@ -110,10 +107,8 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="main">
-        <div class="contents profile">
+        <div id="profile" class="contents">
           <h2 class="title">Profile</h2>
           <p class="text">
             It is a long established fact that a reader will be distracted by the readable<br>
@@ -142,10 +137,10 @@
             </div>
           </div>
         </div>
-      </div>
+      
 
-      <div class="main">
-        <div class="contents contact">
+      
+        <div id="contact" class="contents">
           <h2 class="title">Contact</h2>
           <p class="text">
             It is a long established fact that a reader will be distracted by the readable<br>
@@ -173,7 +168,6 @@
             </div>
           </div>
         </div>
-      </div>
 
     </main>
     <footer>
