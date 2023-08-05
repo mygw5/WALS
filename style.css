@@ -359,7 +359,7 @@ h3 {
     top: 0;
     left: 100%;
     z-index: 99;
-    background: #fff;
+    background: #000;
     transform: .5s;
   }
 
@@ -367,7 +367,7 @@ h3 {
     list-style: none;
   }
 
-  #drawer_input:checked ~ .nav-content {
+  #drawer_input:checked ~ .nav-contents {
     left: 0;
   }
 
